@@ -62,3 +62,36 @@
 * SVM differs from the other classification algorithms in the way that **it chooses the decision boundary that maximizes the distance from the nearest data points of all the classes**.  
 * An SVM doesn't merely find a decision boundary; it finds the most optimal decision boundary.
 * The nearest points from the decision boundary that maximize the distance between the decision boundary and the points are called **support vectors**.  
+
+---
+
+## K Nearest Neighbors
+
+* It is a **supervised machine** learning algorithm.
+* It is a **lazy learning** algorithm and requires no training prior to making real time predictions.
+  * It doesn't have a specialized training phase.
+  * It uses all of the data for training while classifying a new data point or instance.
+  * Makes it much faster than other algorithms that require training.
+* It is a **non-parametric learning** algorithm.
+  * It doesn't assume anything about the underlying data.
+  * Extremely useful since most of the real world data doesn't really follow any theoretical assumption e.g. linear-separability, uniform distribution, etc. 
+* There are only two parameters required to implement KNN
+  * The value of K
+  * The *distance function* - e.g. Euclidean or Manhattan etc.
+* Advantages:
+  * Easy to implement
+  * Much **faster** as there is no separate training phase.
+  * **New data can be added seamlessly** as it requires no training before making predictions.
+* Disadvantages:
+  * **Doesn't work well with high dimensional data**.
+    * With large number of dimensions, it becomes difficult for the algorithm to calculate distance in each dimension.
+    * Has a high prediction cost for large datasets.
+  * **Doesn't work well with categorical features**.
+    * It is difficult to find the distance between dimensions with categorical features.
+
+### KNN Algorithm
+
+* Calculates the distance of a new data point to all other training data points.
+  * *Euclidean*, *Manhattan*, etc.
+* Selects the K-nearest data points.
+* Assigns the data point to the class to which the majority of the K data points belong.

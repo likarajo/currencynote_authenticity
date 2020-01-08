@@ -280,3 +280,35 @@ Classification report:
    macro avg       1.00      1.00      1.00       275
 weighted avg       1.00      1.00      1.00       275
 ```
+
+### K Nearest Neighbors
+
+```
+Grid Search scores:
+
+0.999 (+/-0.004) for {'n_neighbors': 5}
+0.999 (+/-0.004) for {'n_neighbors': 10}
+0.991 (+/-0.012) for {'n_neighbors': 20}
+
+Best parameters:
+ {'n_neighbors': 5}
+
+Training accuracy: 99.90867579908675 %
+
+Test Accuracy: 99.63636363636364 %
+
+Confusion matrix:
+ [[153   1]
+ [  0 121]]
+
+Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.99      1.00       154
+           1       0.99      1.00      1.00       121
+
+    accuracy                           1.00       275
+   macro avg       1.00      1.00      1.00       275
+weighted avg       1.00      1.00      1.00       275
+```
+
